@@ -6,10 +6,12 @@ const fs = require('fs');
 
 const config = require('./config');
 const handlers = require('./lib/handlers');
+const helpers = require('./lib/helpers');
 
 const router = {
 	ping: handlers.ping,
-	users: handlers.users
+	users: handlers.users,
+	tokens: handlers.tokens
 };
 
 const unifiedServer = (req, res) => {
@@ -36,7 +38,7 @@ const unifiedServer = (req, res) => {
 			queryStringObject,
 			method,
 			headers,
-			payload: buffer
+			payload: helpers.parseJsonToObject(buffer)
 		};
 
 		chosenHandler(data, (statusCode, payload) => {
