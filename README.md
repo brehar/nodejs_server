@@ -9,7 +9,6 @@ This will run a complete NodeJS webserver (both HTTP and HTTPS), and it is imple
 Users can generate "checks," which are tasks that will be performed by the app. Specifically, the app will, every minute, determine whether the server specified in the check is currently "up" or "down." If there is a change in status, the app will use Twilio to send an SMS to the user notifying him or her of the change.
 
 ## Configuration
----
 ### Required Folders
 For the application to work, you must (in the root directory, alongside index.js) create two folders:
 1. `https`, containing your `key.pem` and `cert.pem`.
@@ -68,5 +67,4 @@ module.exports = environmentToExport;
 You may, of course, specify additional environments as needed.
 
 ## Running the Server
----
 You can run the server in default (staging) mode simply by executing `node index.js`. To specify a different environment, use the `NODE_ENV` environment variable. For example: `NODE_ENV=production node index.js`.
