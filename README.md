@@ -2,9 +2,9 @@
 A complete web server written in NodeJS without any dependencies whatsoever
 
 This will run a complete NodeJS webserver (both HTTP and HTTPS), and it is implemented without using any dependencies (NPM or otherwise) whatsoever. The server provides the following additional functionalities via its API:
--- Users (all CRUD functionalities)
--- Token generation (all CRUD functionalities)
--- Check generation (all CRUD functionalities)
+* Users (all CRUD functionalities)
+* Token generation (all CRUD functionalities)
+* Check generation (all CRUD functionalities)
 
 Users can generate "checks," which are tasks that will be performed by the app. Specifically, the app will, every minute, determine whether the server specified in the check is currently "up" or "down." If there is a change in status, the app will use Twilio to send an SMS to the user notifying him or her of the change.
 
