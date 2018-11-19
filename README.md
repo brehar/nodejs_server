@@ -72,4 +72,19 @@ module.exports = environmentToExport;
 You may, of course, specify additional environments as needed.
 
 ## Running the Server
-You can run the server in default (staging) mode simply by executing `node index.js`. To specify a different environment, use the `NODE_ENV` environment variable. For example: `NODE_ENV=production node index.js`.
+You can run the server in default (staging) mode simply by executing:
+
+    $ node index.js
+
+To specify a different environment, use the `NODE_ENV` environment variable. For example:
+
+    $ NODE_ENV=production node index.js
+
+### Console Logging Enhancements
+This app is set to use NodeJS's built-in `util` module. By default, `workers.js` and `server.js` will not output any logging to the console (other than an initialization message). To enable additional logging, start the server with the command:
+
+    $ NODE_DEBUG=workers node index.js
+
+or:
+
+    $ NODE_DEBUG=server node index.js
