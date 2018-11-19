@@ -14,7 +14,7 @@ Moreover, the server comes with the following additional features:
 
 ## Configuration
 ### Required Folders
-For the application to work, you must (in the root directory, alongside `index.js`) create two folders:
+For the application to work, you must (in the root directory, alongside `index.js`) create three folders:
 1. `https`, containing your `key.pem` and `cert.pem`.
 2. `.data`, containing three empty folders: `users`, `checks`, and `tokens`.
 3. `.logs`, an empty folder to hold the automatically generated server logs.
