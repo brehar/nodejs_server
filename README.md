@@ -12,6 +12,12 @@ Moreover, the server comes with the following additional features:
 * Automatic generation of logs, which detail all data relevant to the uptime checking functionality.
 * Automatic rotation of logs on a daily basis (including zipping them).
 
+### Updates in Progress
+Version `1.0.0` has been released, which contains all the functionality described in this README. At the present time, the following features have been added in recent commits (all toward the end of creating a complete front-end to consume the API):
+* The ability to serve up HTML documents.
+* Usage of HTML partials for a header and footer.
+* A templating engine.
+
 ## Configuration
 ### Required Folders
 For the application to work, you must (in the root directory, alongside `index.js`) create three folders:
