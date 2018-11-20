@@ -17,6 +17,7 @@ Version `1.0.0` has been released, which contains all the functionality describe
 * The ability to serve up HTML documents.
 * Usage of HTML partials for a header and footer.
 * A templating engine.
+* Serving public assets (favicons, images [png and jpg], stylesheets, and client-side javascript files).
 
 ## Configuration
 ### Required Folders
